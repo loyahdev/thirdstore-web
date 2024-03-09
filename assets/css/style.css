@@ -1054,6 +1054,18 @@ main .main-wrapper.demo-06 {
   height: auto;
 }
 
+@media (max-width: 767px) {
+  .hero-area img {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: 0; /* Resets any negative margin that might be causing layout issues */
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
 main .main-wrapper.demo-06 .hero-area {
   margin-bottom: -50px;
 }
@@ -1350,3 +1362,76 @@ main .footer .credit {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 767px) {
+  .main-wrapper.demo-06 .hero-area, 
+  .main-wrapper.demo-06 .team-area, 
+  .footer {
+      text-align: center;
+  }
+
+  /* Center images within these sections */
+  .main-wrapper.demo-06 .hero-area img,
+  .main-wrapper.demo-06 .team-area .team-img img,
+  img.custom-image {
+      margin: 0 auto !important;/* Center images */
+      display: block;
+      margin-top: -70px !important; 
+      width: 110% !important; /* Make the image responsive */
+      height: auto !important; /* Maintain aspect ratio */
+      max-width: 700px; /* Optional: limit the size to the original width */
+  }
+
+  /* Specifically for the countdown element */
+  .countdown-thing,
+  .countdown .single-count-content {
+      text-align: center;
+      width: 100%; /* Full width to ensure it's centered */
+      display: block; /* Display block to take full width */
+      margin: 0 auto; /* Auto margins for any specified width */
+  }
+
+  .countdown-thing .single-count-content,
+  .countdown .single-count-content::after {
+      display: inline-block; /* Display inline-block for content and pseudo-elements */
+      margin: 0 auto; /* Centering inline elements */
+      text-align: center;
+  }
+  
+  /* Reset or adjust margins/paddings as necessary */
+  .main-wrapper.demo-06 .hero-area,
+  .main-wrapper.demo-06 .team-area,
+  .footer,
+  .countdown-thing {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  }
+
+  .header-06 .container {
+    text-align: center;
+}
+
+.header-06 .row {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-06 .col-md-4, .header-06 .col-md-8 {
+    float: none;
+    display: inline-block;
+    width: 100%;
+}
+
+/* If you have navigation links you want to center as well */
+.header-06 .header-right {
+    text-align: center;
+}
+
+/* Adjust logo alignment if necessary */
+.header-06 .logo {
+    margin: 0 auto;
+    display: block;
+}
+}
