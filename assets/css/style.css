@@ -1029,8 +1029,8 @@ main .header.header-06 {
 
 @media (max-width: 767px) {
   main .header.header-06 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -1067,7 +1067,7 @@ body {
 }
 
 main .main-wrapper.demo-06 .hero-area {
-  margin-bottom: -50px;
+  margin-bottom: 0px;
 }
 
 main .main-wrapper.demo-06 .hero-area h1 {
@@ -1329,11 +1329,12 @@ main .main-wrapper.demo-06 .team-area .team-wrapper .team-item .team-info p {
 
 main .footer {
   position: fixed; /* Change to fixed positioning */
-  bottom: 25px; /* Align to the bottom */
+  bottom: 0px; /* Align to the bottom */
   left: 0; /* Align to the left */
   width: 100%; /* Ensure it spans the full width */
-  margin-bottom: 0; /* Reset any margin-bottom */
-  z-index: 10; /* Ensure it stays on top of other content */
+  margin-bottom: 15px; /* Reset any margin-bottom */
+  margin-top: 1000px;
+  /*z-index: 10; /* Ensure it stays on top of other content */
   /* Add your background, padding, etc. */
   /*background-color: #000; /* Example background color, adjust as needed */
   color: #fff; /* Example text color, adjust as needed */
