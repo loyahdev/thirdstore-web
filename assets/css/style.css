@@ -1015,7 +1015,7 @@ main.main-06 {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh; /* Use min-height instead of height */
-  width: 100%;
+  min-width: 100%;
 }
 
 
